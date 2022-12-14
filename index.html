@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Jogo da Memória</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src="https://kit.fontawesome.com/40f99b97e8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div class="container">
+        <header>
+            <h1>Jogo da Memória</h1>
+        </header>
+        <section class="score-panel">
+          <h3>
+              <ul class="stars">
+              <li><i class="fa fa-star"></i></li>
+              <li><i class="fa fa-star"></i></li>
+              <li><i class="fa fa-star"></i></li>
+            </ul>
+  
+            <span class="moves">0</span> movimento(s)
+              <div class="timer"></div>
+                <div class="restart" onclick=startGame()>
+              <i class="fa fa-repeat"></i>
+            </div>
+          </h3>
+        </section>
+            <ul class="deck" id="card-deck">
+                <li class="card" type="menu">
+                    <i class="fa-solid fa-bars"></i>
+                </li>
+                <li class="card" type="bug">
+                    <i class="fa-solid fa-bug"></i>
+                </li>
+                <li class="card" type="microchip">
+                    <i class="fa-solid fa-microchip"></i>
+                </li>
+                <li class="card" type="arquivo" >
+                    <i class="fa-solid fa-folder-open"></i>
+                </li>
+                <li class="card" type="cod">
+                    <i class="fa-solid fa-file-code"></i>
+                </li>
+                <li class="card" type="compara">
+                    <i class="fa-solid fa-code-compare"></i>
+                </li>
+                <li class="card" type="laptop">
+                    <i class="fa-solid fa-laptop-code"></i>
+                </li>
+                <li class="card" type="codigo">
+                    <i class="fa-solid fa-code"></i>
+                </li>
+                <li class="card" type="menu">
+                    <i class="fa-solid fa-bars"></i>
+                </li>
+                <li class="card" type="bug">
+                    <i class="fa-solid fa-bug"></i>
+                </li>
+                <li class="card" type="microchip">
+                    <i class="fa-solid fa-microchip"></i>
+                </li>
+                <li class="card" type="arquivo" >
+                    <i class="fa-solid fa-folder-open"></i>
+                </li>
+                <li class="card" type="cod">
+                    <i class="fa-solid fa-file-code"></i>
+                </li>
+                <li class="card" type="compara">
+                    <i class="fa-solid fa-code-compare"></i>
+                </li>
+                <li class="card" type="laptop">
+                    <i class="fa-solid fa-laptop-code"></i>
+                </li>
+                <li class="card" type="codigo">
+                    <i class="fa-solid fa-code"></i>
+                </li>
+               
+            </ul>
+        <div id="popup" class="overlay">
+            <div class="popup">
+                <h2>Parabéns</h2>
+                <a class="close" href=# >×</a>
+                <div class="content-1">
+                    Você Terminou!!
+                </div>
+                <div class="content-2">
+                    <p>Você terminou <span id=finalMove> </span> movimentos </p>
+                    <p>em <span id=totalTime> </span> </p>
+                    <p>Rating:  <span id=starRating></span></p>
+                </div>
+                <button id="play-again" onclick="playAgain()">
+                    De novo?</a>
+                </button>
+            </div>
+        </div>
+  
+    </div>
+    <script src='main.js'></script>
+</body>
+</html>
